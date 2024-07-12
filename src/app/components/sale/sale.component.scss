@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.title-sale {
+  padding: 107px 250px 0 250px;
+  font-size: 40px;
+  text-align: center
+}
+
+.image {
+  padding-top: 97px;
+  padding-right: 79px;
+}
+
+.rate {
+  box-sizing: border-box;
+  width: 585px;
+}
+
+.rates-items {
+  display: flex;
+  padding-top: 68px;
+}
+
+.rates-item {
+  height: 261px;
+  width: 187px;
+  border: solid 2px #95979F;
+  border-radius: 20px;
+  margin-right: 12px;
+}
+
+.week {
+  padding-top: 45px;
+  padding-left: 31px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.price{
+  padding-top: 21px;
+  padding-left: 36px;
+}
+
+.sale-price {
+  font-size: 50px;
+}
+
+.old-price {
+  font-size: 24px;
+  text-decoration: line-through;
+  color: #95979F;
+}

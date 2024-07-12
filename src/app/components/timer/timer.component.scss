@@ -1,0 +1,32 @@
+.header {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.timer {
+  display: flex;
+  color: #2D3242;
+  align-items: center;
+  width: 417.32px;
+  height: 64px;
+  margin: 0 544.67px 0 478px;
+  padding: 1px 0 14px 0;
+}
+
+.sale-title {
+  box-sizing: border-box;
+  height: 39px;
+  width: 262px;
+  margin: 20px 0 20px 0;
+  font-size: 30px;
+}
+
+.time {
+  box-sizing: border-box;
+  height: 64px;
+  width: 140px;
+  padding-left: 15.32px;
+  font-size: 60px;
+}
