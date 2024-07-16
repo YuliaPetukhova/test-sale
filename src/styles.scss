@@ -5,7 +5,38 @@
 }
 
 @font-face {
-  font-family: Beirut;
+  font-family: 'Bebas Neue';
+  src: url("./assets/fonts/ofont.ru_Bebas Neue (1).ttf");
+}
+
+@font-face {
+  font-family: 'Rubik Medium';
+  src: url("./assets/fonts/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Rubik Bold';
+  src: url("./assets/fonts/Rubik-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: url("./assets/fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Root UI Bold';
+  src: url("./assets/fonts/PT-Root-UI_Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Root UI Regular';
+  src: url("./assets/fonts/PT-Root-UI_Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Root UI Medium';
+  src: url("./assets/fonts/PT-Root-UI_Medium.ttf");
 }
 
 body {

@@ -5,9 +5,16 @@
 }
 
 .title-sale {
-  padding: 107px 250px 0 250px;
+  padding-top: 107px;
+  height: 46px;
   font-size: 40px;
-  text-align: center
+  text-align: center;
+  text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.24);
+  line-height: 110%;
+  -webkit-text-stroke: 1px black;
+  color: #2D3242;
+  letter-spacing: 1px;
+  font-family: "Rubik", sans-serif;
 }
 
 .image {
@@ -15,14 +22,11 @@
   padding-right: 79px;
 }
 
-.rate {
-  box-sizing: border-box;
-  width: 585px;
-}
-
 .rates-items {
-  display: flex;
-  padding-top: 68px;
+  display: grid;
+  grid-template-columns: repeat(3, 187px);
+  margin-top: 68px;
+  gap: 40px 12px;
 }
 
 .rates-item {
@@ -31,6 +35,77 @@
   border: solid 2px #95979F;
   border-radius: 20px;
   margin-right: 12px;
+  cursor: pointer;
+}
+
+.rates-item:hover {
+  border: solid 2px #01B9C5;
+  background-color: rgba(1, 185, 197, 0.05);
+}
+
+.rates-item-image {
+  height: 4px;
+  text-align: end;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rates-item-image img {
+  height: 70px;
+  top: -30px;
+  position: relative;
+}
+
+.sale-number-img {
+  display: flex;
+  text-align: center;
+}
+
+.sale-number {
+  font-size: 18px;
+  color: #ffffff;
+  z-index: 1;
+  margin: -5px -53px;
+  font-family: 'Root UI Medium', sans-serif;
+}
+
+.rates-forever {
+  margin-top: 40px;
+  height: 125px;
+  width: 585px;
+  border: solid 2px #95979F;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.rates-forever:hover {
+  border: solid 2px #01B9C5;
+  background-color: rgba(1, 185, 197, 0.05);
+}
+
+.content-forever {
+  height: 77px;
+  margin: 23px 52px 25px 31px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content-forever-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-forever {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.sale-comment-forever {
+  height: 63px;
+  font-size: 16px;
 }
 
 .week {
@@ -38,19 +113,165 @@
   padding-left: 31px;
   font-size: 30px;
   text-transform: uppercase;
+  line-height: 100%;
+  color: #687078;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-.price{
-  padding-top: 21px;
-  padding-left: 36px;
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 21px 36px 0;
 }
 
 .sale-price {
   font-size: 50px;
+  font-family: 'Root UI Bold', sans-serif;
+  letter-spacing: -2px;
+  line-height: 110%;
 }
 
 .old-price {
   font-size: 24px;
   text-decoration: line-through;
   color: #95979F;
+  font-family: 'Root UI Medium', sans-serif;
+  line-height: 110%;
+}
+
+.sale-comment {
+  height: 42px;
+  padding: 18px 43px 0;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Root UI Medium', sans-serif;
+}
+
+.info {
+  height: 46px;
+  width: 584px;
+  text-align: justify;
+}
+
+.info-plane {
+  margin-top: 12.79px;
+  margin-bottom: 26.21px;
+  font-size: 18px;
+  line-height: 130%;
+  font-family: 'Root UI Medium', sans-serif;
+}
+
+.police {
+  display: flex;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox > span::before {
+  cursor: pointer;
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #01B9C5;
+  border-radius: 0.25em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: #01B9C5;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox > input:not(:disabled):active + span::before {
+  background-color: #01B9C5;
+  border-color: rgba(1, 185, 197, 0.4);
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox > input:focus + span::before {
+  box-shadow: 0 0 0 0.2rem rgba(1, 185, 197, 0.54);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox > input:focus:not(:checked) + span::before {
+  border-color: #01b9c5;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox > input:checked + span::before {
+  border-color: #01b9c5;
+  background-color: #01b9c5;
+  background-image: url('../../../assets/img/Vector.svg');
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+
+.police-info {
+  margin-left: 6px;
+  font-family: 'Root UI Regular', sans-serif;
+}
+
+.police-info a {
+  padding: 0 1px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #2D97F9;
+  font-family: 'Root UI Regular', sans-serif;
+}
+
+.police-info a:hover {
+  text-decoration: underline;
+}
+
+.byu {
+  font-family: 'Rubik Medium', sans-serif;
+  background-color: #FD4D35;
+  height: 76px;
+  width: 281px;
+  border: 1px solid #FD4D35;
+  border-radius: 60px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.byu:hover {
+  box-shadow: 4px 5px 27px 4px rgba(253, 77, 53, 0.43);
+}
+
+.low-info {
+  color: #95979F;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: justify;
+  padding-bottom: 107px;
+  font-family: 'Root UI Regular', sans-serif;
 }

@@ -16,17 +16,21 @@
 }
 
 .sale-title {
+  font-family: 'Root UI Bold', sans-serif;
   box-sizing: border-box;
   height: 39px;
-  width: 262px;
   margin: 20px 0 20px 0;
   font-size: 30px;
+  color: #2D3242;
 }
 
 .time {
   box-sizing: border-box;
   height: 64px;
   width: 140px;
+  padding-top: 4px;
   padding-left: 15.32px;
   font-size: 60px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #01b9c5;
 }
